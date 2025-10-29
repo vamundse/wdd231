@@ -9,7 +9,7 @@ complementary color 2: #E1E5F2
 
 :root {
     --main-color: #022B3A;
-    --alternate-color: #1F7A8C;
+    --alternate-color: #15515D;
     --comp-color: #BFDBF7;
     --comp-color2: #E1E5F2;
     --text-font: "noto sans", sans-serif;
@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .active {
-    background-color: #000;
+    background-color: var(--alternate-color);
 }
 
 /********************** MAIN **************************/
