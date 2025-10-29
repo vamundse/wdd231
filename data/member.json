@@ -1,0 +1,28 @@
+{
+    "familyName": "Jonson",
+    "movingInDate": "23.10.2024",
+    "numberFamilyMembers": 4,
+    "visitedBishopric": false,
+    "familyMembers": [
+        {
+            "name": "John Jonson",
+            "gender": "male",
+            "birthdate": "19.03.1993"
+        },
+        {
+            "name": "Mary Jonson",
+            "gender": "female",
+            "birthdate": "30.09.1996"
+        },
+        {
+            "name": "Glen Jonson",
+            "gender": "male",
+            "birthdate": "01.02.2010"
+        },
+        {
+            "name": "Lilly Jonson",
+            "gender": "female",
+            "birthdate": "27.11.2015"
+        }
+    ]
+}
