@@ -108,7 +108,7 @@ nav a:hover {
 }
 
 .active {
-    background-color: var(--alternate-color);
+    background-color: #000;
 }
 
 /********************** MAIN **************************/

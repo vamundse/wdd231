@@ -99,25 +99,25 @@ const coursepoints = document.querySelector("#points");
 
 function createCourseCard(list) {
     let courseList ="";
-    let points = 0;
     list.forEach(course => {
         if (course.completed) {
             courseList +=
             `<div class="course-card completed">
             <p>✅ ${course.subject} ${course.number}</p>
             </div>`;
-            points += course.credits;
         } else {
             courseList +=
             `<div class="course-card">
             <p>❌ ${course.subject} ${course.number}</p>
             </div>`;
-            points += course.credits;
         }
     });
 
+    // Use reduce to calculate total credits
+    const credits = list.reduce((total, course) => total + course.credits, 0);
+
     courselist.innerHTML = courseList;
-    coursepoints.innerHTML = `The total credits for course listed above is ${points}`;
+    coursepoints.innerHTML = `The total credits for course listed above is ${credits}`;
 
 };
 
