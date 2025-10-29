@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vegard André Amundsen</title>
+    <meta name="description" content="This is the homepage of Vegard André Amundsen">
+    <meta name="author" content="Vegard André Amundsen">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/logo.svg" alt="Logo" width="24" height="24">
+        <span>Vegard André Amundsen</span>
+        <button id="ham-btn" class="hamburger"></button>
+    </header>
+    <nav>
+        <a href="index.html" class="active">Home</a>
+        <a href="chamber/index.html">Chamber</a>
+        <a href="final-project/index.html">Final</a>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="about card">
+            <h2>About me</h2>
+            <p>My name is Vegard Amundsen. I'm from Norway but currently live in Denmark because I met a Danish girl.</p>
+            <p>I have studied Marketing, Business, Entrereneurship and Education before and now I am persuing a degree in Software Design.</p>
+        </section>
+        <section class="photo card">
+            <h2>Student Photo</h2>
+            <picture>
+                <source srcset="images/profile-small.webp" media="(min-width: 608px)">
+                <img src="images/profile-large.webp" alt="Profile picture of me" height="470" width="470">
+            </picture>
+        </section>
+        <section class="courses card">
+            <h2>Web Certificate Courses</h2>
+            <div class="sort">
+                <a href="#all" id="all">All</a>
+                <a href="#cse" id="cse">CSE</a>
+                <a href="#wdd" id="wdd">WDD</a>
+            </div>
+            <span id="courselist"></span>
+            <div id="points"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/vamundse"><img src="images/github.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/vegardamundsen/"><img src="images/linkedin.svg" alt=""></a>
+            <a href="https://www.facebook.com/vamundse"><img src="images/facebook.svg" alt=""></a>
+        </div>
+        <div class="copyright">&copy; <span id="currentyear"></span> - Vegard Amundsen - Odense, Danmark</div>
+        <div class="modified">Last Modification: <span id="datemodified"></span></div>
+    </footer>
+</body>
+</html>
