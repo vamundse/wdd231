@@ -1,0 +1,86 @@
+@media only screen and (min-width: 35rem) {
+
+    #membercards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #membercards div {
+        display: flex;
+    }
+
+    #membertable table {
+    padding: 0px 10px 0 10px;
+    }
+
+    #membertable tr {
+    grid-template-columns: 1fr 2fr;
+    }
+
+    #membertable td {
+    grid-column: 2 / 3;
+    }
+}
+
+@media only screen and (min-width: 43rem) {
+    header {
+        grid-template-columns: 24px 2fr auto;
+        align-items: center;
+    }
+
+    header img {
+        margin-bottom: 5px;
+    }
+
+    header span {
+        align-self: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        border-top: none;
+    }
+
+    nav a:hover {
+        border-right: none;
+        font-weight: 400;
+        background-color: var(--complementary-color);
+        color: #000;
+    }
+
+    nav a.active:hover {
+        border-right: none;
+    }
+}
+
+@media only screen and (min-width: 52rem) {
+    #membertable table {
+        padding: 0px 10px 0 10px;
+    }
+
+    #membertable table tr {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2.5fr;
+    }
+
+    #membertable table td {
+        grid-column: auto;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: center;
+        gap: 20px;
+    }
+}

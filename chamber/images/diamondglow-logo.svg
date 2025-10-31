@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100" height="100">
+  <defs>
+    <radialGradient id="diamondGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#E6E6FA;stop-opacity:1" />
+      <stop offset="40%" style="stop-color:#DDA0DD;stop-opacity:1" />
+      <stop offset="80%" style="stop-color:#9370DB;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0082;stop-opacity:1" />
+    </radialGradient>
+    <filter id="sparkle">
+      <feGaussianBlur stdDeviation="1" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <circle cx="50" cy="50" r="45" fill="url(#diamondGradient)" stroke="#663399" stroke-width="3"/>
+  
+  <!-- Diamond shape -->
+  <polygon points="50,20 65,35 50,50 35,35" fill="#FFFFFF" stroke="#E6E6FA" stroke-width="2" filter="url(#sparkle)"/>
+  
+  <!-- Inner diamond facets -->
+  <polygon points="50,20 57,28 50,35 43,28" fill="#F8F8FF"/>
+  <polygon points="50,35 57,28 65,35 50,50" fill="#E6E6FA"/>
+  <polygon points="50,35 43,28 35,35 50,50" fill="#DDA0DD"/>
+  
+  <!-- Sparkle points -->
+  <circle cx="40" cy="25" r="1.5" fill="#FFFFFF" filter="url(#sparkle)"/>
+  <circle cx="65" cy="30" r="1" fill="#FFFFFF" filter="url(#sparkle)"/>
+  <circle cx="30" cy="40" r="1" fill="#FFFFFF" filter="url(#sparkle)"/>
+  
+  <!-- Letters DG -->
+  <text x="50" y="70" font-family="serif" font-size="18" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF">DG</text>
+  
+  <text x="50" y="85" font-family="sans-serif" font-size="7" font-weight="bold" 
+        text-anchor="middle" fill="#FFFFFF">DIAMOND GLOW</text>
+</svg>

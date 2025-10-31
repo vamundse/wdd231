@@ -1,0 +1,68 @@
+{
+    "members": [
+        {
+            "name": "Goldsteen",
+            "address": "32 North Drive, Tibuktu, Mali 999",
+            "phone": "800-555-4598",
+            "website": "https://www.goldsteen.com/",
+            "imageurl": "images/goldstein-logo.svg",
+            "level": 1
+        },
+        {
+            "name": "Brown Buster",
+            "address": "9 Crook Lane, Tibuktu, Mali 999",
+            "phone": "800-555-9821",
+            "website": "https://www.brown.com/",
+            "imageurl": "images/brownbuster-logo.svg",
+            "level": 2
+        },
+        {
+            "name": "Cash Cow",
+            "address": "123 Broom High Street, Tibuktu, Mali 999",
+            "phone": "800-555-3467",
+            "website": "https://www.cashcow.com/",
+            "imageurl": "images/cashcow-logo.svg",
+            "level": 3
+        },
+        {
+            "name": "Pharma North",
+            "address": "76 Hollow Ground, Tibuktu, Mali 999",
+            "phone": "800-555-9843",
+            "website": "https://www.pharmanorth.com/",
+            "imageurl": "images/pharmanorth-logo.svg",
+            "level": 2
+        },
+        {
+            "name": "Superstore",
+            "address": "100 Kings road, Tibuktu, Mali 999",
+            "phone": "800-555-9357",
+            "website": "https://www.superstore.com/",
+            "imageurl": "images/superstore-logo.svg",
+            "level": 1
+        },
+        {
+            "name": "Great buys",
+            "address": "10 Sweet Green Lane, Tibuktu, Mali 999",
+            "phone": "800-555-9023",
+            "website": "https://www.greatbuys.com/",
+            "imageurl": "images/greatbuys-logo.svg",
+            "level": 3
+        },
+        {
+            "name": "Horse Trader",
+            "address": "1 Farm House, Tibuktu, Mali 999",
+            "phone": "800-555-1100",
+            "website": "https://www.besthorses.com/",
+            "imageurl": "images/horsetrader-logo.svg",
+            "level": 2
+        },
+        {
+            "name": "Diamond Glow",
+            "address": "16 City Avenue, Tibuktu, Mali 999",
+            "phone": "800-555-2288",
+            "website": "https://www.diamondsareforever.com/",
+            "imageurl": "images/diamondglow-logo.svg",
+            "level": 3
+        }
+    ]
+}

@@ -10,33 +10,55 @@
     <meta property="og:description" content="Get to know the cities Businesses through the Timbuktu Chamber of Commerce directory. Contact information and information about the businesses are available.">
     <meta property="og:image" content="images\business-social-share.webp">
     <meta property="og:url" content="https://vamundse.github.io/wdd231/chamber/directory.html">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/memberdata.js" defer></script>
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <header>
+    <header id="header">
         <img src="images/logo.svg" alt="Logo" width="24" height="24">
         <span>Timbuktu Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger"></button>
-    </header>
-    <nav>
+        <nav>
         <a href="index.html">Home</a>
-        <a href="directory.html">Directory</a>
+        <a href="directory.html" class="active">Directory</a>
         <a href="join.html">Join</a>
         <a href="discover.html">Discover</a>
     </nav>
+    </header>
     <main>
-
+        <section class="members">
+            <h1>Business Directory</h1>
+            <div>
+                <a href="#" id="grid"><img src="images/grid.svg" alt="grid view"></a>
+                <a href="#" id="list"><img src="images/list.svg" alt="List view"></a>
+            </div>
+            <div id="membercards"></div>
+            <div id="membertable"></div>
+        </section>
     </main>
     <footer>
         <section>
-
+            <h4>Timbuktu Chamber of Commerce</h4>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
         </section>
         <section>
-
+            <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="Youtube profile" height="512" width="512"></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter.svg" alt="Twitter profile" height="512" width="512"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn profile" width="512" height="512"></a>
         </section>
         <section>
-            
+            <p>WDD231 Class Project</p>
+            <p>Vegard André Amundsen</p>
+            <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="modified"></span></p>
         </section>
     </footer>
 </body>

@@ -34,4 +34,4 @@ const displayProphets = (prophets) => {
     })
 }
 
-getProphetData(url);
+getProphetData();

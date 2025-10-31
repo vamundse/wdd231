@@ -1,5 +1,43 @@
+/*
+******************* COLOR SCHEME *********************
+main color: #022B3A
+alternate color: #15515D;
+complementary color: #BFDBF7
+complementary color 2: #E1E5F2
+*/
 
-/********* NAVIGATION *************/
+:root {
+    --main-color: #022B3A;
+    --alternate-color: #15515D;
+    --alternate-color-transparent: rgb(21, 81, 93, 0.3);
+    --complementary-color: #BFDBF7;
+    --complementary-color2: #E1E5F2;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/************** HEADER *************/
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    column-gap: 10px;
+    padding: 10px;
+    border-bottom: 1px #ddd;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+header span {
+    align-self: end;
+}
+
+
+
+/*********** HAMBURGER MENU *************/
 .hamburger {
     background: none;
     border: none;
@@ -10,10 +48,143 @@
 .hamburger::before {
     content: "\2630";
     font-size: 1.5rem;
+    color: #fff;
 }
 
-.hamburger.show::before {
+.hamburger.open::before {
     content: "\00D7";
     font-size: 1.5rem;
-    color: var(--main-color);
+    color: #fff;
+}
+
+/************* NAVIGATION ****************/
+nav {
+    display: none;
+    flex-direction: column;
+    gap: 1px;
+    margin-top: 1px;    
+}
+
+nav a {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    background-color: var(--main-color);
+    border-top: 1px solid #fff;
+    text-decoration: none;
+}
+
+nav a:hover {
+    border-right: 5px solid var(--alternate-color);
+    font-weight: 800;
+}
+
+nav.open {
+    display: flex;
+    grid-column: 1/4;
+}
+
+nav .active {
+    background-color: var(--alternate-color);
+}
+
+nav a.active:hover {
+    border-right: 5px solid var(--complementary-color);
+}
+
+/*********** MAIN **********************/
+
+.members {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.members a img {
+    width: 50px;
+    height: auto;
+    padding: 10px;
+    border: 3px solid var(--alternate-color);
+    border-radius: 8px;
+}
+
+.members a.active img {
+    background-color: var(--alternate-color-transparent);
+}
+
+#membercards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#membercards div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
+    gap: 10px;
+}
+
+#membercards img {
+    width: 120px;
+}
+
+#membertable {
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+#membertable table {
+    padding: 20px 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#membertable tr {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 5px;
+    padding: 10px;
+}
+
+#membertable th {
+    justify-self: center;
+}
+
+#membertable td {
+    grid-column: 1 / 2;
+    justify-self: center;
+}
+
+#membertable tr:nth-child(odd) {
+    background-color: var(--complementary-color2);
+}
+
+/*********** FOOTER ****************/
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+    color: #fff;
+    padding: 20px 0;
+}
+
+footer section {
+    text-align: center;
+    margin: 10px;
+}
+
+footer img {
+    width: 50px;
+    height: auto;
+    margin: 0 10px;
 }
