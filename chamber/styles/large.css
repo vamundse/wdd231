@@ -1,5 +1,6 @@
 @media only screen and (min-width: 35rem) {
 
+    /***************** DIRECTORY CARDS AND TABLE ****************/
     #membercards {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
@@ -25,9 +26,11 @@
 }
 
 @media only screen and (min-width: 43rem) {
+    
+    /************* HEADER ****************/
     header {
-        grid-template-columns: 24px 2fr auto;
-        align-items: center;
+    grid-template-columns: 24px 2fr auto;
+    align-items: center;
     }
 
     header img {
@@ -62,9 +65,40 @@
     nav a.active:hover {
         border-right: none;
     }
+
+    /**************** HERO *************/
+    .hero a {
+    bottom: 20px;
+    right: 20px;
+    transform: none;
+    }
+
+    .information h2 {
+        height: 45px;
+    }
+
+    /********** WEATHER **************/
+    .weather-numbers {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #weather-icon {
+        padding: 0px;
+        margin: 0px;
+        align-self: start;
+        margin-top: -30px;
+    }
+
+    #tempnow {
+        font-size: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 52rem) {
+     
+    /********** DIRECTORY TABLE ***************/
     #membertable table {
         padding: 0px 10px 0 10px;
     }
@@ -78,9 +112,30 @@
         grid-column: auto;
     }
 
+    /************* FOOTER ****************/
     footer {
         flex-direction: row;
         justify-content: center;
         gap: 20px;
+    }
+}
+
+@media only screen and (min-width: 63rem) {
+    /*********** INFORMATION ************/
+    .information {
+    grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    /******** BUSINESS *****************/
+    .businesses {
+    grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .businesses p {
+        font-size: 0.8rem;
+    }
+
+    .businesses span {
+        font-size: 0.8rem;
     }
 }

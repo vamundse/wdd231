@@ -6,7 +6,9 @@
             "phone": "800-555-4598",
             "website": "https://www.goldsteen.com/",
             "imageurl": "images/goldstein-logo.svg",
-            "level": 1
+            "level": 1,
+            "email": "mail@goldsteen.com",
+            "tagline": "Gold of the North"
         },
         {
             "name": "Brown Buster",
@@ -14,7 +16,9 @@
             "phone": "800-555-9821",
             "website": "https://www.brown.com/",
             "imageurl": "images/brownbuster-logo.svg",
-            "level": 2
+            "level": 2,
+            "email": "mail@brown.com",
+            "tagline": "Buster Duster"
         },
         {
             "name": "Cash Cow",
@@ -22,7 +26,9 @@
             "phone": "800-555-3467",
             "website": "https://www.cashcow.com/",
             "imageurl": "images/cashcow-logo.svg",
-            "level": 3
+            "level": 3,
+            "email": "mail@cashcow.com",
+            "tagline": "Cash is Cow"
         },
         {
             "name": "Pharma North",
@@ -30,7 +36,9 @@
             "phone": "800-555-9843",
             "website": "https://www.pharmanorth.com/",
             "imageurl": "images/pharmanorth-logo.svg",
-            "level": 2
+            "level": 2,
+            "email": "mail@gpharmanorth.com",
+            "tagline": "Live better"
         },
         {
             "name": "Superstore",
@@ -38,7 +46,9 @@
             "phone": "800-555-9357",
             "website": "https://www.superstore.com/",
             "imageurl": "images/superstore-logo.svg",
-            "level": 1
+            "level": 1,
+            "email": "mail@gsuperstore.com",
+            "tagline": "Store of your dreams"
         },
         {
             "name": "Great buys",
@@ -46,7 +56,9 @@
             "phone": "800-555-9023",
             "website": "https://www.greatbuys.com/",
             "imageurl": "images/greatbuys-logo.svg",
-            "level": 3
+            "level": 3,
+            "email": "mail@gratbuys.com",
+            "tagline": "Buy what your heart desires"
         },
         {
             "name": "Horse Trader",
@@ -54,7 +66,9 @@
             "phone": "800-555-1100",
             "website": "https://www.besthorses.com/",
             "imageurl": "images/horsetrader-logo.svg",
-            "level": 2
+            "level": 2,
+            "email": "mail@besthorses.com",
+            "tagline": "Best of the rest"
         },
         {
             "name": "Diamond Glow",
@@ -62,7 +76,9 @@
             "phone": "800-555-2288",
             "website": "https://www.diamondsareforever.com/",
             "imageurl": "images/diamondglow-logo.svg",
-            "level": 3
+            "level": 3,
+            "email": "mail@diamondsareforever.com",
+            "tagline": "Diamonds are forever"
         }
     ]
 }

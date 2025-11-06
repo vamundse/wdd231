@@ -16,6 +16,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/memberfrontpage.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,79 +28,76 @@
         <span>Timbuktu Chamber of Commerce</span>
         <button id="ham-btn" class="hamburger" aria-label="hamburger menu button"></button>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="directory.html" class="active">Directory</a>
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
         </nav>
     </header>
-    <main>
-        <section class="hero">
+    <section class="hero">
             <picture>
                 <source srcset="images/hero-large.webp" media="(min-width: 1200px)">
-                <source srcset="images/hero-medium.webp" media="(min-width: 720px)">
+                <source srcset="images/hero-medium.webp" media="(min-width: 688px)">
                 <img src="images/hero-small.webp" width="500" height="750" alt="Man giving a speach">
             </picture>
             <a href="" class="button">Keynote Tickets</a>
         </section>
+    <main>
+        <h1>Home</h1>
         <section class="information">
-            <div>
+            <div class="events card">
                 <h2>Events</h2>
+                <div class="event">
+                    <h3>
+                        Looking for Bobby Bo! (09.12.2025)
+                    </h3>
+                    <p>
+                        Bring your familily to find the children friendly character known from TV Bobby Bo in the business center. We invite you all to visit us and get to know us and our businesses.
+                    </p>
+                </div>
+                <div class="event">
+                    <h3>
+                        Get to know Pharma North (10.11.2025)
+                    </h3>
+                    <p>
+                        Pharma North will be visiting us today to tells us about their exciting future. We will provide snacks and entertainment.
+                    </p>
+                </div>
             </div>
-            <div>
+            <div class="current-weather card">
                 <h2>Current Weather</h2>
-                <img id="weather-icon">
-                <span id="#temp-now"></span>
-                <p id="#weathernow"></p>
-                <p id="#temphigh"></p>
-                <p id="#templow"></p>
-                <p id="#humidity"></p>
-                <p id="#sunrise"></p>
-                <p id="#sunset"></p>
+                <span id="weather-icon"></span>
+                <div class="weather-numbers">
+                    <p id="tempnow"></p>
+                    <p id="weathernow"></p>
+                    <p id="temphigh"></p>
+                    <p id="templow"></p>
+                    <p id="humidity"></p>
+                    <p id="sunrise"></p>
+                    <p id="sunset"></p>
+                </div>
             </div>
-            <div>
+            <div class="forecast-weather card">
                 <h2>Weather Forecast</h2>
-                <p id="#today"></p>
-                <p id="#tomorrow"></p>
-                <p id="#2daysafter"></p>
+                <div class="forecast-numbers">
+                    <p id="tomorrow"></p>
+                    <p id="twodays"></p>
+                    <p id="threedays"></p>
+                </div>
             </div>
         </section>
-        <section class="businesses">
-            <div>
-                <h2>Business Name</h2>
-                <h3>Business Tag Line</h3>
-                <img src="" alt="">
-                <p>E-mail: </p>
-                <p>Phone: </p>
-                <p>URL: </p>
-            </div>
-            <div>
-                <h2>Business Name</h2>
-                <h3>Business Tag Line</h3>
-                <img src="" alt="">
-                <p>E-mail: </p>
-                <p>Phone: </p>
-                <p>URL: </p>
-            </div>
-            <div>
-                <h2>Business Name</h2>
-                <h3>Business Tag Line</h3>
-                <img src="" alt="">
-                <p>E-mail: </p>
-                <p>Phone: </p>
-                <p>URL: </p>
-            </div>
+        <section class="businesses" id="businesses">
         </section>
     </main>
     <footer>
         <section>
-            <p>Timbuktu Chamber of Commerce</p>
+            <p class="bold">Timbuktu Chamber of Commerce</p>
             <p>10 Rue De La Paix</p>
             <p>Timbuktu, Mali 999</p>
             <p>info@timbuktucc.org</p>
             <p>(223) 555-2300</p>
         </section>
-        <section>
+        <section class="social">
             <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="Youtube profile" height="512" width="512"></a>
             <a href="https://www.twitter.com/"><img src="images/twitter.svg" alt="Twitter profile" height="512" width="512"></a>
             <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn profile" width="512" height="512"></a>

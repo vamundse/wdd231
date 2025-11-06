@@ -1,6 +1,7 @@
 const url = 'data/members.json';
 const cards = document.querySelector("#membercards");
 const table = document.querySelector("#membertable");
+const businesses = document.querySelector("#businesses");
 
 const list = document.querySelector("#list");
 const grid = document.querySelector("#grid");
