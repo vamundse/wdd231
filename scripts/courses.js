@@ -94,34 +94,59 @@ wdd.addEventListener("click", () => {
   createCourseCard(courses.filter(course => course.subject.includes("WDD")));
 });
 
-const courselist = document.querySelector("#courselist");
-const coursepoints = document.querySelector("#points");
+const courseList = document.querySelector("#courselist");
+const coursePoints = document.querySelector("#points");
+const courseDetails = document.querySelector("#course-details");
 
 function createCourseCard(list) {
-    let courseList ="";
+    courseList.innerHTML = '';
+
     list.forEach(course => {
+        const courseDiv = document.createElement("div");
+        const courseP = document.createElement("p");
+
         if (course.completed) {
-            courseList +=
-            `<div class="course-card completed">
-            <p>✅ ${course.subject} ${course.number}</p>
-            </div>`;
+            courseDiv.setAttribute("class", "course-card completed");
+            courseP.innerHTML = `✅ ${course.subject} ${course.number}`;
         } else {
-            courseList +=
-            `<div class="course-card">
-            <p>❌ ${course.subject} ${course.number}</p>
-            </div>`;
+            courseDiv.setAttribute("class", "course-card");
+            courseP.innerHTML = `❌ ${course.subject} ${course.number}`;
         }
+
+        courseDiv.appendChild(courseP);
+        courseDiv.addEventListener('click', () => {
+            displayCourseDetails(course);
+            courseDetails.showModal();
+        });
+        courseList.appendChild(courseDiv);
     });
 
-    // Use reduce to calculate total credits
+    // Used reduce to calculate total credits
     const credits = list.reduce((total, course) => total + course.credits, 0);
-
-    courselist.innerHTML = courseList;
-    coursepoints.innerHTML = `The total credits for course listed above is ${credits}`;
-
+    coursePoints.innerHTML = `The total credits for course listed above is ${credits}`;
 };
 
 createCourseCard(courses);
 
+/********************* MODAL ******************/
+const closeButton = document.querySelector("#close");
 
+closeButton.addEventListener('click', () => {
+    courseDetails.close();
+});
 
+const header = document.querySelector('#subject');
+const title = document.querySelector('#title');
+const credits = document.querySelector('#credits');
+const certificate = document.querySelector('#certificate');
+const description = document.querySelector('#description');
+const tech = document.querySelector("#tech");
+
+function displayCourseDetails(course) {
+    header.innerHTML = `${course.subject} ${course.number}`;
+    title.textContent = course.title;
+    credits.innerHTML = `${course.credits} credits`;
+    certificate.innerHTML = `Certificate: ${course.certificate}`;
+    description.textContent = course.description;
+    tech.innerHTML = `Technology: ${course.technology.join(', ')}`;
+    }
