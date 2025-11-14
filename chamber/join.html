@@ -18,6 +18,7 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/footer.js" defer></script>
     <script src="scripts/member-levels.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
     <link rel="icon" href="favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,30 +50,27 @@
                                 title="Must contain you first name or given name" autocomplete="given-name"></label>
                         <label>Last Name<input type="text" required name="lastName"
                                 title="Must contain you last name or family name" autocomplete="family-name"></label>
-                        <label>Organizational Title<input type="text" required name="title"
+                        <label>Organizational Title<input type="text" name="title"
                                 title="Must contain your title in your organization of at least 7 characters"
                                 autocomplete="organization-title" pattern="[A-Za-z_ ]{7,}"></label>
                         <label>E-Mail<input type="email" required name="email"
-                                title="Must contain an email adress like post@email.com" autocomplete="on"
+                                title="Must contain an email adress like post@email.com" autocomplete="email"
                                 placeholder="post@email.com"></label>
                         <label>Phone Number<input type="tel" required name="phone"
-                                title="Must contain a valid telephone number" autocomplete="on"></label>
+                                title="Must contain a valid telephone number" autocomplete="tel"></label>
                     </fieldset>
                     <fieldset>
                         <legend>Business information</legend>
-                        <label>Business Name<input type="text" required name="businessname"
-                                title="Must contain the name of you business" autocomplete="organization"></label>
-                        <p>Membership Level</p>
-                        <label class="radio"><input type="radio" name="membership" value="Non-profit">Non-Profit (No
-                            fee)</label>
-                        <label class="radio"><input type="radio" name="membership" value="bronze">Bronze ($10 per
-                            month)</label>
-                        <label class="radio"><input type="radio" name="membership" value="silver">Silver ($50 per
-                            month)</label>
-                        <label class="radio"><input type="radio" name="membership" value="gold">Gold ($100 per
-                            month)</label>
-                        <label>Business Description<textarea title="Must contain a description of your business"
-                                name="description"></textarea></label>
+                        <label>Business Name<input type="text" required name="businessname" title="Must contain the name of you business" autocomplete="organization"></label>
+                        <label for="membership">Membership Level</label>
+                        <select name="membership" id="membership" required>
+                            <option disabled="disabled" selected="true" value="">-- Choose a memebership option --</option>
+                            <option value="gold">Gold</option>
+                            <option value="silver">Silver</option>
+                            <option value="bronze">Bronze</option>
+                            <option value="non-profit">Non-Profit</option>
+                        </select>
+                        <label>Business Description<textarea title="Must contain a description of your business" name="description"></textarea></label>
                         <input type="hidden" name="timestamp" id="timestamp">
                     </fieldset>
                     <button type="submit">Send application</button>

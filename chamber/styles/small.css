@@ -401,21 +401,6 @@ label {
     gap: 2px;
 }
 
-label.radio {
-    flex-direction: row;
-    gap: 8px;
-}
-
-input[type="radio"] {
-    height: 20px;
-    width: 20px;
-    accent-color: green;
-}
-
-div .radio {
-    display: flex;
-    flex-direction: row;
-}
 
 input {
     padding: 10px;
@@ -423,16 +408,25 @@ input {
     border: 1px solid #999;
 }
 
-label .radio {
-    display: flex;
-    flex-direction: column;
+select {
+    margin-top: -18px;
+    padding: 8px;
+    border-radius: 8px;
 }
 
-input {
+input:required {
     border-bottom: 5px solid red;
 }
 
-input:valid {
+input:required:valid {
+    border-bottom: 5px solid green;
+}
+
+select:required {
+    border-bottom: 5px solid red;
+}
+
+select:required:valid {
     border-bottom: 5px solid green;
 }
 
