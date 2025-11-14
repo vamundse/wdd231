@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timbuktu Chamber of Commerce join as member</title>
+    <meta name="description"
+        content="Timbuktu Chamber of Commerce join as a member page. Fill out our form and become a member for exclusive benefits.">
+    <meta name="author" content="Vegard André Amundsen">
+    <meta property="og:title" content="Timbuktu Chamber of Commerce - join as member">
+    <meta property="og:description"
+        content="Fill out our form and become a member of the Timbuktu Chamber of Commerce for exclusive benefits.">
+    <meta property="og:image" content="https://vamundse.github.io/wdd231/chamber/business-social-share.webp">
+    <meta property="og:url" content="https://vamundse.github.io/wdd231/chamber/index.html">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/footer.js" defer></script>
+    <script src="scripts/member-levels.js" defer></script>
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Momo+Trust+Display&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header id="header">
+        <img src="images/logo.svg" alt="Timbuktu Chamber of Commerce Logo" width="24" height="24">
+        <span>Timbuktu Chamber of Commerce</span>
+        <button id="ham-btn" class="hamburger" aria-label="hamburger menu button"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Join</h1>
+        <section class="join-container">
+            <div class="form-container">
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html">
+                    <fieldset>
+                        <legend>Application Contact</legend>
+                        <label>First Name<input type="text" required name="firstName"
+                                title="Must contain you first name or given name" autocomplete="given-name"></label>
+                        <label>Last Name<input type="text" required name="lastName"
+                                title="Must contain you last name or family name" autocomplete="family-name"></label>
+                        <label>Organizational Title<input type="text" required name="title"
+                                title="Must contain your title in your organization of at least 7 characters"
+                                autocomplete="organization-title" pattern="[A-Za-z_ ]{7,}"></label>
+                        <label>E-Mail<input type="email" required name="email"
+                                title="Must contain an email adress like post@email.com" autocomplete="on"
+                                placeholder="post@email.com"></label>
+                        <label>Phone Number<input type="tel" required name="phone"
+                                title="Must contain a valid telephone number" autocomplete="on"></label>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Business information</legend>
+                        <label>Business Name<input type="text" required name="businessname"
+                                title="Must contain the name of you business" autocomplete="organization"></label>
+                        <p>Membership Level</p>
+                        <label class="radio"><input type="radio" name="membership" value="Non-profit">Non-Profit (No
+                            fee)</label>
+                        <label class="radio"><input type="radio" name="membership" value="bronze">Bronze ($10 per
+                            month)</label>
+                        <label class="radio"><input type="radio" name="membership" value="silver">Silver ($50 per
+                            month)</label>
+                        <label class="radio"><input type="radio" name="membership" value="gold">Gold ($100 per
+                            month)</label>
+                        <label>Business Description<textarea title="Must contain a description of your business"
+                                name="description"></textarea></label>
+                        <input type="hidden" name="timestamp" id="timestamp">
+                    </fieldset>
+                    <button type="submit">Send application</button>
+                </form>
+            </div>
+            <div class="memberships-container">
+                <h2>Membership Levels</h2>
+                <div class="memberships" id="membership-levels"></div>
+            </div>
+        </section>
+    </main>
+    <dialog id="level-dialog"></dialog>
+    <footer>
+        <section>
+            <p class="bold">Timbuktu Chamber of Commerce</p>
+            <p>10 Rue De La Paix</p>
+            <p>Timbuktu, Mali 999</p>
+            <p>info@timbuktucc.org</p>
+            <p>(223) 555-2300</p>
+        </section>
+        <section class="social">
+            <a href="https://www.youtube.com/"><img src="images/youtube.svg" alt="Youtube profile" height="512"
+                    width="512"></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter.svg" alt="Twitter profile" height="512"
+                    width="512"></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.svg" alt="LinkedIn profile" width="512"
+                    height="512"></a>
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Vegard André Amundsen</p>
+            <p>&copy; <span id="year"></span> Timbuktu Chamber of Commerce</p>
+            <p>Last Modification: <span id="modified"></span></p>
+        </section>
+    </footer>
+</body>
+
+</html>

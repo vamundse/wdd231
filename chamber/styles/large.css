@@ -138,4 +138,18 @@
     .businesses span {
         font-size: 0.8rem;
     }
+
+    /********** JOIN CONTAINER ********/
+    .join-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    form {
+        margin: 0 10px;
+    }
+
+    .memberships {
+        margin: 0 10px;
+    }
 }

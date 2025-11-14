@@ -1,0 +1,32 @@
+{
+    "levels": [
+        {
+            "id": 1,
+            "name": "Gold",
+            "price": "100",
+            "description": "Our highest level of membership which gives you access to all of our premium services",
+            "services": ["Special Events", "Training", "Advertising", "Spotlight on the webpage", "Discounts at events and in our online shop"] 
+        },
+        {
+            "id": 2,
+            "name": "Silver",
+            "price": "50",
+            "description": "Our highest level of membership which gives you access to all of our premium services",
+            "services": ["Special Events", "Training", "Spotlight on the webpage"] 
+        },
+        {
+            "id": 3,
+            "name": "Bronze",
+            "pricet": "10",
+            "description": "Our highest level of membership which gives you access to all of our premium services",
+            "services": ["Special Events", "Training"] 
+        },
+        {
+            "id": 4,
+            "name": "Non-profit",
+            "price": "0",
+            "description": "Our highest level of membership which gives you access to all of our premium services",
+            "services": ["Special Events", "Training", "Discounts at events and in our online shop"]
+        }
+    ]
+}
