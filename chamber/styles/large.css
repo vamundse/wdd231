@@ -10,18 +10,20 @@
 
     #membercards div {
         display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     #membertable table {
-    padding: 0px 10px 0 10px;
+        padding: 0px 10px 0 10px;
     }
 
     #membertable tr {
-    grid-template-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
     }
 
     #membertable td {
-    grid-column: 2 / 3;
+        grid-column: 2 / 3;
     }
 }
 
@@ -68,9 +70,9 @@
 
     /**************** HERO *************/
     .hero a {
-    bottom: 20px;
-    right: 20px;
-    transform: none;
+        bottom: 50px;
+        right: 50px;
+        transform: none;
     }
 
     .information h2 {
@@ -89,10 +91,6 @@
         margin: 0px;
         align-self: start;
         margin-top: -30px;
-    }
-
-    #tempnow {
-        font-size: 1.5rem;
     }
 }
 
@@ -131,25 +129,9 @@
     grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .businesses p {
-        font-size: 0.8rem;
-    }
-
-    .businesses span {
-        font-size: 0.8rem;
-    }
-
     /********** JOIN CONTAINER ********/
     .join-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-    }
-
-    form {
-        margin: 0 10px;
-    }
-
-    .memberships {
-        margin: 0 10px;
     }
 }
