@@ -383,6 +383,10 @@ select:required:valid {
     border-bottom: 5px solid green;
 }
 
+form button {
+    width: 100%;
+}
+
 /************ MEMBER LEVELS *************/
 .memberships {
     max-width: 600px;
