@@ -1,0 +1,114 @@
+@media only screen and (min-width: 35rem) {
+
+    /***************** DIRECTORY CARDS AND TABLE ****************/
+    #membercards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(325px, 1fr));
+        gap: 20px;
+        padding: 20px;
+    }
+
+    #membercards div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #membertable table {
+        padding: 0px 10px 0 10px;
+    }
+
+    #membertable tr {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    #membertable td {
+        grid-column: 2 / 3;
+    }
+}
+
+@media only screen and (min-width: 42rem) {
+    
+    /************* HEADER ****************/
+    header {
+    grid-template-columns: 24px 2fr auto;
+    align-items: center;
+    }
+
+    header img {
+        margin-bottom: 5px;
+    }
+
+    header span {
+        align-self: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav a {
+        border-top: none;
+    }
+
+    nav a:hover {
+        border-right: none;
+        font-weight: 400;
+        background-color: var(--complementary-color);
+        color: #000;
+    }
+
+    nav a.active:hover {
+        border-right: none;
+    }
+
+    /**************** HERO *************/
+    .hero a {
+        bottom: 50px;
+        right: 50px;
+        transform: none;
+    }
+
+    .information h2 {
+        height: 45px;
+    }
+
+    /********** WEATHER **************/
+    .weather-numbers {
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    #weather-icon {
+        padding: 0px;
+        margin: 0px;
+        align-self: start;
+        margin-top: -30px;
+    }
+
+    #poi div{
+        grid-template-areas:
+        "a a a"
+        "b b c"
+        "b b d"
+        "e e e";
+        max-width: 620px;
+    }
+
+    #poi img {
+        max-width: 300px;
+        height: auto;
+    }
+
+    #poi img:hover {
+        border-radius: 20px 100px;
+        filter: grayscale(100%)
+    }
+}

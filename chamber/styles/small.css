@@ -490,6 +490,77 @@ form button {
     text-align: center;
 }
 
+/************ DISCOVER MAIN ***************/
+#box {
+    margin: 20px 20px;
+}
+
+#close {
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+#poi {
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#poi div {
+    display: grid;
+    margin-bottom: 20px;
+    gap: 20px;
+    padding: 20px 0;
+    grid-template-areas:
+    "a"
+    "b"
+    "c"
+    "d"
+    "e";
+    background-color: var(--complementary-color2);
+    border: 1px solid var(--main-color);
+    border-radius: 8px;
+    max-width: 300px;
+}
+
+.description,
+.address,
+#poi h2 {
+    padding: 0 20px;
+}
+
+#poi h2 {
+    grid-area: a;
+}
+
+.description {
+    grid-area: c;
+}
+
+.address {
+    grid-area: d;
+}
+
+#poi img {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    grid-area: b;
+}
+
+#poi button {
+    margin: 0 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid var(--main-color);
+    background-color: var(--alternate-color);
+    color: #fff;
+    font-weight: 800;
+    grid-area: e;
+    cursor: pointer;
+}
+
 /*********** FOOTER ****************/
 footer {
     display: flex;
