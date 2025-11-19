@@ -18,6 +18,10 @@ h1, h2, h3, h4 {
     font-weight: 400;
 }
 
+.pointer {
+    cursor: pointer;
+}
+
 /************** HEADER *************/
 header {
     display: grid;
@@ -36,7 +40,6 @@ header span {
 .hamburger {
     background: none;
     border: none;
-    cursor: pointer;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
@@ -348,8 +351,6 @@ fieldset {
 }
 
 legend, form button {
-    font-weight: 800;
-    font-size: 1.25rem;
     padding: 10px;
     color: white;
     background-color: var(--main-color);
@@ -497,7 +498,6 @@ form button {
 
 #close {
     font-size: 0.8rem;
-    cursor: pointer;
 }
 
 #poi {
@@ -552,13 +552,11 @@ form button {
 #poi button {
     margin: 0 20px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 8px;
     border: 1px solid var(--main-color);
     background-color: var(--alternate-color);
     color: #fff;
-    font-weight: 800;
     grid-area: e;
-    cursor: pointer;
 }
 
 /*********** FOOTER ****************/

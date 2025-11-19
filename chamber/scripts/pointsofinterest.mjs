@@ -24,6 +24,7 @@ function buildCards(array) {
         image.setAttribute("width", 300);
         image.setAttribute("height", 200);
         button.textContent = "Learn More";
+        button.setAttribute("class", "pointer");
 
         div.appendChild(h2);
         div.appendChild(address);
