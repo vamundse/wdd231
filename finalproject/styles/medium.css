@@ -1,0 +1,50 @@
+@media only screen and (min-width: 40rem) {
+    header {
+        grid-template-columns: 50px auto 300px;
+    }
+    
+    nav {
+        display: flex;
+        flex-direction: row;
+        grid-column: 3/4;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .intro h1,
+    .intro p,
+    .intro a {
+        max-width: 500px;
+        justify-self: center;
+    }
+
+    #tools,
+    #uses {
+        flex-direction: row;
+        margin: 0 auto;
+        align-items: flex-start;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #tools div
+    {
+        max-width: 280px;
+    }
+
+    #uses div {
+        max-width: 386px;
+    }
+
+    #uses-modal {
+    margin: auto;
+}
+
+    footer.flex-container-column {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}

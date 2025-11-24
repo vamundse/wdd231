@@ -1,0 +1,288 @@
+:root {
+/*************** COLORS ****************/    
+    --font-color: #222222;
+    --primary-color: #00494b;
+    --secondary-color: #ffdf5e;
+    --contrast-color-1: #d9d9d9;
+    --contrast-color-2: #ffffff;
+
+/**************** FONTS *****************/
+    --heading-font: "Poetsen One", sans-serif;
+    --text-font: 'Sniglet', sans-serif;
+    --alternative-font: 'Noto Sans', sans-serif;
+}
+
+/***************** GENERAL STYLES **********/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--text-font);
+}
+
+h1, h2, h3 {
+    font-family: var(--heading-font);
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.flex-container-row {
+    display: flex;
+}
+
+.flex-container-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+}
+
+main {
+    margin: 0 auto;
+}
+
+section {
+    max-width: 100%;
+}
+
+button, .button {
+    background-color: var(--primary-color);
+    padding: 10px;
+    width: 100%;
+    color: var(--contrast-color-2);
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+.button:active {
+    background-color: var(--contrast-color-2);
+    color: var(--font-color);
+}
+
+.shadow {
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.3);
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.card {
+    gap: 20px;
+    padding: 20px;
+    background-color: var(--contrast-color-2);
+    border-radius: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+/*********** HEADER ***************/
+header {
+    padding: 20px;
+    gap: 20px;
+    grid-template-columns: 50px auto 50px;
+    align-items: center;
+}
+
+header, footer {
+    background-color: var(--primary-color);
+}
+
+header img {
+    width: 100%;
+    height: auto;
+}
+
+header a {
+    color: var(--contrast-color-2);
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+header a:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color)
+}
+
+#header-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--contrast-color-2);
+}
+
+/************** NAVIGATION ************/
+nav {
+    display: none;
+    grid-column: 1/4;
+    flex-direction: column;
+    text-align: center;
+}
+
+nav.show {
+    display: flex;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.active {
+    text-decoration: underline 3px solid var(--secondary-color);
+}
+
+/************* INTRO ******************/
+.intro {
+    text-align: center;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.intro h1,
+.intro p,
+.intro .button {
+    margin: 0 20px;
+}
+
+.intro .button {
+    width: calc(100% - 40px);
+    padding: 20px;
+    font-size: 1.25rem;
+}
+
+/*************** TOOLS AND USES **************/
+.tools,
+.uses {
+    padding: 30px 10px;
+}
+
+.tools {
+    background-color: var(--secondary-color);
+}
+
+.uses {
+    background-color: var(--contrast-color-1);
+}
+
+.tools h2,
+.uses h2 {
+    text-align: center;
+    padding: 0px 20px 20px 20px;
+}
+
+#tools,
+#uses {
+    align-items: flex-start;
+}    
+
+#tools div img,
+#uses div img {
+    border-radius: 10px;
+}
+
+#uses h3::first-letter,
+#uses-modal h2::first-letter {
+    text-transform: capitalize;
+}
+
+/************ USES MODAL ****************/
+#uses-modal {
+    padding: 30px;
+    max-width: 360px;
+    margin: auto 20px;
+    border: none;
+    border-radius: 10px;
+}
+
+#uses-modal div {
+    gap: 20px;
+}
+
+#uses-modal li {
+    margin-left: 20px;
+}
+
+#uses-modal::backdrop {
+    background-color: rgb(0, 0, 0, 0.8);
+}
+/************ NEWSLETTER FORM *************/
+.newsletter {
+    margin: 0 auto;
+    padding: 40px 20px;
+    max-width: 500px;
+}
+
+form {
+    gap: 20px;
+}
+
+form h2 {
+    text-align: center;
+}
+
+input {
+    padding: 8px;
+    width: 100%;
+}
+
+/************** FOOTER **********/
+footer {
+    gap: 30px;
+    text-align: center;
+    padding: 40px 0;
+    color: var(--contrast-color-2);
+}
+
+footer a {
+    color: var(--contrast-color-2);
+}
+
+.social {
+    gap: 20px;
+    justify-content: center;
+}
+
+.social img {
+    width: 50px;
+    filter: grayscale(100%);
+}
+
+.social img:hover {
+    filter: grayscale(0%);
+}
+
+.fotdiv {
+    gap: 2px;
+}
