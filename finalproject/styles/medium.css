@@ -1,6 +1,6 @@
 @media only screen and (min-width: 40rem) {
     header {
-        grid-template-columns: 50px auto 300px;
+        grid-template-columns: 50px auto 350px;
     }
     
     nav {
@@ -31,16 +31,60 @@
 
     #tools div
     {
-        max-width: 280px;
+        max-width: 265px;
     }
 
     #uses div {
-        max-width: 386px;
+        max-width: 373px;
     }
 
     #uses-modal {
     margin: auto;
-}
+    }
+
+    .newsletter {
+        padding: 30px 0;
+    }
+
+    .about-me {
+        margin: 0 auto;
+        background-color: var(--contrast-color-1);
+    }
+
+    .about-me-container {
+        grid-template-columns: 1fr 3fr;
+        align-items: start;
+    }
+
+    .self-intro {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-left: 30px;
+    }
+
+    .about-me img {
+        grid-column: 1/2;
+        border-radius: 10px;
+        max-width: 400px;
+        margin: 30px 10px;
+    }
+
+    .edu-exp {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    .education {
+        margin: 30px 0 0 0;
+    }
+
+    .experience {
+        margin: 10px 0 30px 0;
+    }
+
+    .contact-form {
+        padding: 30px 0;
+    }
 
     footer.flex-container-column {
         flex-direction: row;

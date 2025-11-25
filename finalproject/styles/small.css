@@ -34,19 +34,25 @@ h2 {
 
 .flex-container-row {
     display: flex;
+    gap: 20px;
 }
 
 .flex-container-column {
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 
 .grid {
     display: grid;
 }
 
-main {
+#main {
     margin: 0 auto;
+}
+
+#main {
+    gap: 0;
 }
 
 section {
@@ -85,7 +91,6 @@ img {
 }
 
 .card {
-    gap: 20px;
     padding: 20px;
     background-color: var(--contrast-color-2);
     border-radius: 10px;
@@ -205,6 +210,7 @@ nav.show {
 #tools,
 #uses {
     align-items: flex-start;
+    gap: 10px;
 }    
 
 #tools div img,
@@ -226,10 +232,6 @@ nav.show {
     border-radius: 10px;
 }
 
-#uses-modal div {
-    gap: 20px;
-}
-
 #uses-modal li {
     margin-left: 20px;
 }
@@ -237,24 +239,101 @@ nav.show {
 #uses-modal::backdrop {
     background-color: rgb(0, 0, 0, 0.8);
 }
-/************ NEWSLETTER FORM *************/
-.newsletter {
+
+/************ NEWSLETTER AND CONTACT RETURN PAGE *************/
+.newsletter,
+.message {
     margin: 0 auto;
-    padding: 40px 20px;
+    padding: 20px 10px;
     max-width: 500px;
 }
 
-form {
-    gap: 20px;
-}
-
-form h2 {
+.newsletter h2 {
     text-align: center;
 }
+/************* ABOUT ME *******************/
+#edu-list div,
+#exp-list div {
+    gap: 2px;
+}
 
-input {
-    padding: 8px;
+.education,
+.experience,
+.self-intro {
+    margin: 30px 0;
+    padding: 0 10px;
+}
+
+.self-intro h1 {
+    margin: 0;
+}
+
+.self-intro li {
+    padding-bottom: 2px;
+    margin-left: 25px;
+}
+
+/***************** CONTACT ME **************/
+.contact-info h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.contact-info,
+.contact-form form
+ {
+    padding: 30px 10px;
+}
+
+.contact-form {
+    background-color: var(--contrast-color-1);
+}
+
+.radio {
+    gap: 10px;
+    align-items: center;
+}
+
+input,
+textarea,
+fieldset,
+input[type="tel"]:valid {
     width: 100%;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 1px solid var(--font-color);
+    background-color: var(--contrast-color-2);
+    padding: 8px;
+}
+
+legend {
+    background-color: var(--contrast-color-1);
+    border: 1px solid var(--font-color);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+fieldset {
+    padding: 20px;
+}
+
+input[type="radio"] {
+    height: 25px;
+    width: 25px;
+}
+
+textarea {
+    height: 200px;
+}
+
+input:required,
+textarea:required {
+    border-bottom: 5px solid red;
+}
+
+input:valid,
+textarea:valid {
+    border-bottom: 5px solid green;
 }
 
 /************** FOOTER **********/
@@ -270,7 +349,6 @@ footer a {
 }
 
 .social {
-    gap: 20px;
     justify-content: center;
 }
 
