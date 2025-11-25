@@ -91,4 +91,8 @@
         align-items: center;
         justify-content: center;
     }
+
+    footer div {
+        width: 250px;
+    }
 }
