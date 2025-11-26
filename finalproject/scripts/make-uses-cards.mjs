@@ -19,8 +19,6 @@ function makeUsesCards(data) {
         image.setAttribute("alt", card.name);
         image.setAttribute("width", 360);
         image.setAttribute("height", 240);
-        source.setAttribute("srcset", card["image-medium"]);
-        source.setAttribute("media", "(min-width: 600px)");
         button.textContent = `Learn more about ${card.name}`;
         button.classList = "shadow button";
         button.addEventListener('click', () => {

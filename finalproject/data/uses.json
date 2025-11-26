@@ -2,10 +2,9 @@
     "uses": [
         {
             "name": "making your lessons more engaging",
-            "short": "Include fun and engaging activities in your lessons to active the students learning.",
-            "description": "Include some of our activities into you lessons to make them more interactive, interesting and engaging. Let your students learn by doing. Being activily engaged in your own learning is shown to increase learning and retetion of learning.",
+            "short": "Include fun and engaging activities in your lessons to activate the students learning.",
+            "description": "Include some of our activities in your lessons to make them more interactive, interesting and engaging. Let your students learn by doing. Being actively engaged in your own learning is shown to increase learning and retention of learning.",
             "features": ["Learning Activities", "Group Assignments", "Learning Games", "Creating Products"],
-            "image-medium": "images/activities-medium.webp",
             "image-small": "images/activities-small.webp"
         },
         {
@@ -13,7 +12,6 @@
             "short": "Update your knowledge as a teacher in several subjects to stay up to date.",
             "description": "A great teacher never stop learning. On our site you can update your knowledge on a wide range of topics. This way you can stay on top of the topics you teach and make it more accurate, up to date and interesting for your students.",
             "features": ["Video Lessons", "Book Suggestions", "Condensed Articles", "Lesson Plans"],
-            "image-medium": "images/learning-medium.webp",
             "image-small": "images/learning-small.webp"
         },
         {
@@ -21,7 +19,6 @@
             "short": "Get to know tools that are invaluable to you as a teacher in your learning environment.",
             "description": "There are some important tools that are invaluble to teachers. These are tools that do not always have something to do with the lesson, but often about creating a good learning environment. I will give you some important tools to make your classrom that learning space.",
             "features": ["Classrom Leadership", "Classrom Culture", "Learn to Learn", "Specific Topic Tools"],
-            "image-medium": "images/tools-medium.webp",
             "image-small": "images/tools-small.webp"
         }
     ]
