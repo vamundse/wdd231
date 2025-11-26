@@ -2,16 +2,14 @@ import {makeUsesCards} from "./make-uses-cards.mjs";
 
 async function getUsesData() {
     const url = "data/uses.json";
-    let data;
     try {
         const response = await fetch(url);
-        data = await response.json();
+        const data = await response.json();
+        const usesData = data.uses;
+        makeUsesCards(usesData);
+        console.log('Uses Data:', usesData);
     } catch(error) {
         console.error(error);
-    } finally {
-        const usesData = data.uses;
-        console.log('Uses Data:', usesData);
-        makeUsesCards(usesData);
     }
 }
 

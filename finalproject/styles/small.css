@@ -98,6 +98,10 @@ img {
     text-align: center;
 }
 
+.lookhere {
+    background: red;
+}
+
 /*********** HEADER ***************/
 header {
     padding: 20px;
